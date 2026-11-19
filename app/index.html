@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTA VI Trophy Guide — Leonida Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>LEONIDA — GTA VI Trophy Guide &amp; Tracker</h1>
+  <p>All 55 PlayStation 5 trophies for Grand Theft Auto VI: official names, descriptions and grades, a guide for each in our own words with its sources, a roadmap to the Platinum, and a checklist that saves in your browser. Works fully offline.</p>
+  <div class="progress-wrap">
+    <div class="progress-bar"><span id="progress-fill"></span></div>
+    <span id="progress-count">0/55</span>
+  </div>
+  <p id="progress-text">0 of 55 earned · 0% to the Platinum</p>
+</header>
+
+<div class="toolbar">
+  <div class="view-tabs" role="group" aria-label="View">
+    <button type="button" data-view="tracker" aria-pressed="true">Checklist</button>
+    <button type="button" data-view="roadmap" aria-pressed="false">Roadmap to Platinum</button>
+  </div>
+  <input type="search" id="search" placeholder="Search trophies…" aria-label="Search trophies">
+  <div class="kind-filters" role="group" aria-label="Filter by kind">
+    <button type="button" data-kind="all" aria-pressed="true">All</button>
+    <button type="button" data-kind="story" aria-pressed="false">Story</button>
+    <button type="button" data-kind="missable" aria-pressed="false">Missable</button>
+    <button type="button" data-kind="collectibles" aria-pressed="false">Collectibles</button>
+    <button type="button" data-kind="activities" aria-pressed="false">Activities</button>
+    <button type="button" data-kind="online" aria-pressed="false">Online</button>
+  </div>
+  <label>Grade
+    <select id="grade">
+      <option value="all">All grades</option>
+      <option value="platinum">Platinum</option>
+      <option value="gold">Gold</option>
+      <option value="silver">Silver</option>
+      <option value="bronze">Bronze</option>
+    </select>
+  </label>
+  <label class="spoiler-toggle"><input type="checkbox" id="spoiler"> Hide story spoilers</label>
+  <button id="export" type="button">Export progress</button>
+  <label class="import-label">Import progress <input id="import" type="file" accept="application/json"></label>
+  <button id="reset" type="button">Reset</button>
+</div>
+
+<main id="tracker">
+  <section id="list" aria-label="Trophy checklist"></section>
+  <aside id="detail" aria-label="Selected trophy"></aside>
+</main>
+
+<section id="roadmap" aria-label="Roadmap to the Platinum" hidden></section>
+
+<footer>
+  <p>Names, descriptions and grades are as PlayStation publishes them, via the Exophase and PSNProfiles trophy lists. Each guide is written for this entry in our own words and names its sources beside it. No Rockstar artwork or logo is used anywhere; the look is our own. Your progress never leaves your browser — export downloads a file, import reads one back.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
